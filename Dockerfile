@@ -2,6 +2,7 @@ FROM node:14.9.0-alpine
 RUN apk add --no-cache nodejs yarn
 WORKDIR /usr/src/app
 COPY . .
+RUN mv .prod.env .dev.env
 RUN yarn install
 RUN yarn build
 EXPOSE 4000
