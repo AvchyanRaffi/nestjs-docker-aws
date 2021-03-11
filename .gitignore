@@ -4,6 +4,7 @@
 
 # env variables files
 .dev.env
+.prod.env
 
 # TypeScript v1 declaration files
 typings/
